@@ -1,4 +1,15 @@
 <!-- index.wxml -->
 <view class="container">
+  <!-- 搜索栏 -->
   <search />
+  <!-- 轮播图 -->
+  <view class="swiper-container" hover-class="none">
+    <swiper class="swiper-outer" indicator-dots="false" autoplay circular>
+      <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="goods_id">
+        <navigator class="" url="{{item.navigator_url}}" hover-class="none" open-type="navigate">
+          <image class="swiper-image" src="{{item.image_src}}" mode="aspectFill" />
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
 </view>
