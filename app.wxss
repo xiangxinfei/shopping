@@ -24,3 +24,12 @@ page {
   /* 页面默认背景颜色 */
   background-color: #f5f5f5;
 }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

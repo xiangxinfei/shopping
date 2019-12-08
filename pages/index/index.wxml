@@ -4,12 +4,31 @@
   <search />
   <!-- 轮播图 -->
   <view class="swiper-container" hover-class="none">
-    <swiper class="swiper-outer" indicator-dots="false" autoplay circular>
+    <swiper class="swiper-outer" indicator-dots autoplay circular>
       <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="goods_id">
-        <navigator class="" url="{{item.navigator_url}}" hover-class="none" open-type="navigate">
-          <image class="swiper-image" src="{{item.image_src}}" mode="aspectFill" />
+        <navigator class="swiper-navigator" url="{{item.navigator_url}}" hover-class="none" open-type="navigate">
+          <image class="swiper-image" src="{{item.image_src}}" mode="aspectFit" />
         </navigator>
       </swiper-item>
     </swiper>
+  </view>
+  <!-- 中间的tab栏 -->
+  <view class="tabs">
+    <navigator class="navigator" wx:for="{{tabsList}}" wx:key="{{index}}" url="/pages/category/index" hover-class="navigator-hover" open-type="switchTab">
+      <image class="image" src="{{item.image_src}}" mode="aspectFit" />
+    </navigator>
+  </view>
+  <!-- 分类 -->
+  <view class="classify">
+    <view class="classify__item" wx:for="{{classify}}" wx:key="{{index}}">
+      <view class="classify__item--title">
+        <image class="classify__item--title__image" src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <view class="classify__item--list clearfix">
+        <navigator class="classify__item--list__navigator" wx:for="{{item.product_list}}" wx:key="{{index}}" wx:for-item="product_v" wx:for-index="product_i" url="{{product_v.navigator_url}}" hover-class="none" open-type="navigate">
+          <image class="classify__item--list__navigator--image" src="{{product_v.image_src}}" mode="{{product_i === 0 ? 'widthFix' : 'scaleToFill'}}" />
+        </navigator>
+      </view>
+    </view>
   </view>
 </view>

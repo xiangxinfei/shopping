@@ -1,3 +1,52 @@
-view {
-  color: var(--themeColor);
+.swiper-container,
+.swiper-outer,
+.swiper-item,
+.swiper-navigator,
+.swiper-image {
+  width: 100%;
+  height: 340rpx;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs .navigator {
+  flex: 1;
+  height: 200rpx;
+  padding: 20rpx;
+}
+
+.tabs .navigator .image {
+  width: 100%;
+  height: 100%;
+}
+
+.classify .classify__item .classify__item--title__image {
+  width: 100%;
+  margin: 6rpx 0;
+}
+
+.classify .classify__item--list {
+  width: 100%;
+  padding: 10rpx;
+}
+
+.classify .classify__item--list .classify__item--list__navigator {
+  width: 33.33%;
+  float: left;
+}
+
+.classify .classify__item--list .classify__item--list__navigator:nth-last-of-type(-n+4) {
+  height: 27.72711vw;
+  border-left: 10rpx solid #fff;
+}
+
+.classify .classify__item--list .classify__item--list__navigator:nth-of-type(2), .classify .classify__item--list .classify__item--list__navigator:nth-of-type(3) {
+  border-bottom: 10rpx solid #fff;
+}
+
+.classify .classify__item--list .classify__item--list__navigator .classify__item--list__navigator--image {
+  width: 100%;
+  height: 100%;
 }

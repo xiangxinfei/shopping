@@ -4,7 +4,8 @@
     "pages/category/index",
     "pages/cart/index",
     "pages/mine/index",
-    "pages/search/index"
+    "pages/search/index",
+    "pages/goods_detail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -40,7 +41,7 @@
         "pagePath": "pages/mine/index",
         "text": "我的",
         "iconPath": "images/mine.png",
-        "selectedIconPath": "images/mine.png"
+        "selectedIconPath": "images/mine-o.png"
       }
     ]
   },
