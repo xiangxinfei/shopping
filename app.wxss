@@ -2,6 +2,7 @@
 page,
 view,
 text,
+button,
 swiper,
 swiper-item,
 image,
@@ -15,6 +16,11 @@ navigator {
 page {
   /* 定义一个主题颜色 */
   --themeColor: #eb4450;
+  /* 定义border边框 */
+  --borderColor: 1px solid #f0f0f0;
+
   /* 定义默认字体大小 */
   font-size: 28rpx;
+  /* 页面默认背景颜色 */
+  background-color: #f5f5f5;
 }

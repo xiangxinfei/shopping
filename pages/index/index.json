@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "iconfont": "/components/iconfont/index"
-  }
+    "iconfont": "/components/iconfont/index",
+    "search": "/components/search/index"
+  },
+  "navigationBarTitleText": "首页"
 }

@@ -1,0 +1,25 @@
+.search {
+  padding: 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search .search-input {
+  flex: 1;
+  height: 52rpx;
+  background-color: #fff;
+  padding-left: 14rpx;
+  border-radius: 10rpx;
+}
+
+.search .search-button {
+  width: 152rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  padding: 0;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  background-color: #fff;
+  border: var(--borderColor);
+}

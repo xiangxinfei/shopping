@@ -1,0 +1,4 @@
+<view class="search">
+  <input type="text" class="search-input" />
+  <button class="search-button" hover-class="none">取消</button>
+</view>
