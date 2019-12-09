@@ -17,7 +17,6 @@ Page({
       })
     });
     ApiIndex.getClassify().then(res => {
-      console.log(res);
       this.setData({
         classify: res.data.message
       })
