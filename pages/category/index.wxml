@@ -4,7 +4,7 @@
   <view class="category">
     <!-- 左侧 -->
     <scroll-view class="category--left" scroll-y>
-      <view class="category--left-item" wx:for="{{leftMenu}}" wx:key="cat_id" bind:tap="handleItem">
+      <view class="category--left-item {{index===currentIndex ? 'selected': ''}}" wx:for="{{leftMenu}}" wx:key="cat_id" bind:tap="handleItem" data-index="{{index}}">
         {{item}}
       </view>
     </scroll-view>
@@ -20,7 +20,7 @@
         <!-- 内容 -->
         <view class="item--list">
           <navigator url="/pages/goods_list/index?cid={{contentItem.cat_id}}" hover-class="none" open-type="navigate" wx:for="{{item.children}}" wx:key="cat_id" wx:for-item="contentItem" wx:for-index="contentIndex">
-            <image src="{{contentItem.cat_icon}}" mode="widthFix" />
+            <image src="{{contentItem.cat_icon}}" mode="widthFix" lazy-load />
             <text>{{contentItem.cat_name}}</text>
           </navigator>
         </view>

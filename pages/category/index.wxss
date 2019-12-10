@@ -22,6 +22,11 @@ page {
   text-align: center;
 }
 
+.category .category--left .selected {
+  color: var(--themeColor);
+  border-left: 4rpx solid red;
+}
+
 .category .category--right {
   flex: 5;
 }

@@ -19,6 +19,11 @@ page {
       line-height: 80rpx;
       text-align: center;
     }
+
+    .selected {
+      color: var(--themeColor);
+      border-left: 4rpx solid red;
+    }
   }
 
   .category--right {
